@@ -1,0 +1,11 @@
+{
+    "apps" : [
+        {
+            "name"      : "nodejs-docker",
+            "max_memory_restart" : "500M",
+            "script"    : "/nodejs-docker/app.js",
+            "instances"  : "max", //开启实例数量，max为cpu核数
+            "exec_mode"  : "cluster", //集群模式，最大提升网站并发
+        }
+    ]
+}
